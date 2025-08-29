@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="../../index.html">Volver al index</a>
+    <br />
+    <a href="../temas.html">Volver a clase 3</a>
+    <main>
+      <form action="./result.html" method="get" target="blank">
+        <fieldset>
+          <!-- Fieldset agrupa contextos logicos. En este caso, informacion personal 
+             y por otro lado el mensaje y motivo del mensaje -->
+          <!-- No es obligatorio que este. Se pueden agrupar con div y css, sin aportar contexto logico -->
+
+          <legend>Información Personal</legend>
+
+          <!-- 👉 el "for" del label debe coincidir con el "id" del input -->
+          <label for="nombre">Nombre:</label>
+          <input
+            id="nombre"
+            name="nombre"
+            type="text"
+            placeholder="Ingrese su nombre..."
+            required
+          />
+
+          <label for="email">Correo Electrónico:</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Ingrese su correo..."
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Motivo y Mensaje</legend>
+
+          <label for="motivo">Motivo:</label>
+          <select id="motivo" name="motivo">
+            <option value="">-- Seleccioná una opción --</option>
+            <option value="consulta">Consulta</option>
+            <option value="soporte">Soporte</option>
+            <option value="otros">Otros</option>
+          </select>
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="4"
+            cols="30"
+            placeholder="Hola, me comunico por..."
+          ></textarea>
+        </fieldset>
+
+        <section>
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpiar</button>
+        </section>
+      </form>
+      <hr />
+      <hr />
+      <h2>Formulario (POST)</h2>
+      <form action="" method="post" autocomplete="off" novalidate>
+        <div>
+          <label for="user">Usuario</label>
+          <input id="user" name="user" required />
+        </div>
+        <div>
+          <label for="pass">Contraseña</label>
+          <input id="pass" name="pass" type="password" required minlength="6" />
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+      <p>
+        Con <strong>POST</strong> la URL no muestra los datos. (Hace falta un
+        servidor para “ver” lo que llegó.)
+      </p>
+    </main>
+  </body>
+</html>

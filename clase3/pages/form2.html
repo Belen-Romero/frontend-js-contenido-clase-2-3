@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="../../index.html">Volver al index</a>
+    <br />
+    <a href="../temas.html">Volver a clase 3</a>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--            Recordar: los datos que se envian son name=value             -->
+    <!-- ----------------------------------------------------------------------- -->
+    <form action="./result.html" method="get">
+      <fieldset>
+        <legend>Preferencias</legend>
+
+        <p><strong>Turno (radio - una opción)</strong></p>
+        <!-- Cuando usamos input radio, tenemos que usar mismo name. Sino, veremos que se quedan tildados a la vez -->
+        <label>
+          <!-- Atributo "cheked" hace que aparezca tildado al cargar -->
+          <input type="radio" name="turno" value="manana" checked />
+          Mañana
+        </label>
+        <label> <input type="radio" name="turno" value="tarde" /> Tarde </label>
+
+        <!-- Podemos asociar label/input anidando al input o asociando for=id -->
+        <input id="turno-noche" type="radio" name="turno" value="noche" />
+        <label for="turno-noche"> Noche</label>
+
+        <p><strong>Intereses (checkbox - varias opciones)</strong></p>
+        <label
+          ><input type="checkbox" name="intereses" value="html" checked />
+          HTML</label
+        >
+        <label
+          ><input type="checkbox" name="intereses" value="css" /> CSS</label
+        >
+        <label><input type="checkbox" name="intereses" value="js" /> JS</label>
+      </fieldset>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
