@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="../../index.html">Volver al index</a>
+    <br />
+    <a href="../temas.html">Volver a clase 3</a>
+
+    <main>
+      <h1>Tablas</h1>
+      <!-- No se usa mas atributo border, pero al no tener CSS, lo vemos solo provisoriamente -->
+      <table border="1">
+        <caption>
+          Notas por materia
+        </caption>
+        <thead>
+          <tr>
+            <th>Estudiante</th>
+            <th>Materia</th>
+            <th>Nota</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ana</td>
+            <td>Matemática</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>Ana</td>
+            <td>Lengua</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>Promedio general</td>
+            <td>8.5</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- <br>  usado provisoriamente al no haber visto CSS -->
+      <br />
+      <hr />
+
+      <h2>Ahora con colspan y rowspan</h2>
+      <table border="1">
+        <caption>
+          Notas por materia
+        </caption>
+        <thead>
+          <tr>
+            <th>Estudiante</th>
+            <th>Materia</th>
+            <th>Nota</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Ana</td>
+            <td>Matemática</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>Lengua</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td colspan="2">Promedio general</td>
+            <td>8.5</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
